@@ -1,8 +1,15 @@
-# DOM XSS 
-**Challenge:** Trigger a DOM-based XSS by inserting a malicious `iframe` payload in the search box.
+# Bonus Payload — Search Box (Juice Shop)
 
-**Short description:** The application reflects untrusted input into the DOM without proper sanitization, allowing execution of JavaScript supplied via an `iframe` `src` attribute. 
-The payload used here is:
+**Challenge:** Use the provided HTML payload in the search box to demonstrate client-side injection. The payload embeds a SoundCloud player that auto-plays audio.
 
+**Provided payload**
 ```html
-<iframe src="javascript:alert(`xss`)">
+# Bonus Payload — Search Box (Juice Shop)
+
+**Challenge:** Use the provided HTML payload in the search box to demonstrate client-side injection. The payload embeds a SoundCloud player that auto-plays audio.
+
+**Provided payload**
+```html
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/771984076&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
