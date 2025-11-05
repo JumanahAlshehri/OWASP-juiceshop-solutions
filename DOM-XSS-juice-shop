@@ -1,3 +1,0 @@
-DOM XSS
-Challenge: Perform a DOM XSS attack with <iframe src="javascript:alert(`xss`)">.
-How to solve: Type <iframe src="javascript:alert(`xss`)"> in the search box.
